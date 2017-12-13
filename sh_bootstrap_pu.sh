@@ -10,8 +10,8 @@ apt-get install php php-fpm php-mysql php-curl php-gd php-pear php-imagick php-i
 
 apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 52E16F86FEE04B979B07E28DB02C46DF417A0893
 apt-key adv --keyserver packages.microsoft.com --recv-keys 52E16F86FEE04B979B07E28DB02C46DF417A0893
-apt-get install apt-transport-https
-apt-get update && apt-get install azure-cli
+apt-get install apt-transport-https -y 
+apt-get update && apt-get install azure-cli -y 
 
 a2enmod cgi
 
@@ -45,3 +45,5 @@ cd /etc/apache2/conf-enabled/
 rm /etc/apache2/conf-enabled/serve-cgi-bin.conf
 wget https://rgcloudmouradgeneralpurp.blob.core.windows.net/exchangecontainermourad/etcapache2conf-enabledserve-cgi-bin.conf
 mv etcapache2conf-enabledserve-cgi-bin.conf serve-cgi-bin.conf
+
+service apache2 restart 
