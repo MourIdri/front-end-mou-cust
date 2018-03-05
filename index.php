@@ -20,6 +20,10 @@ function openattendy() {
 
 
 <body>
+<div>
+<img src="https://rgcloudmouradgeneralpurp.blob.core.windows.net/exchangecontainermourad/BIG_EVENT_1.jpg" alt="myPic" />
+</div>
+    
 <h3> REGISTER TO THE EVENT ! </h3>
    <p></p>
    <a href="register.php" class="button">Register</a>
