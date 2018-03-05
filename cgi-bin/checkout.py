@@ -52,7 +52,8 @@ outfile.close()
 
 #sending user infos to app server using python "requests"
 
-url = "http://frontwebappmain:80/customerupdate"
+#url = "http://frontwebappmain:80/customerupdate"
+url = "http://10.100.2.4:80/customerupdate"
 def send_request():
     #payload = {"param_1": "value_1", "param_2": "value_2"}
     payload = datas
